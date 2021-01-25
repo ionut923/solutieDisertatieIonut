@@ -1,12 +1,13 @@
 package com.steps;
 
+import org.junit.Assert;
+
 import com.tools.FieldGenerators;
 import com.tools.FieldGenerators.Mode;
 
-import junit.framework.Assert;
+
 import net.serenitybdd.core.annotations.findby.By;
 
-@SuppressWarnings("deprecation")
 public class SignUpSteps extends GeneralSteps {
 	private static final long serialVersionUID = 1L;
 

@@ -15,7 +15,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 
 @RunWith(SerenityRunner.class)
-public class Test_ContactSupportTeam extends BaseTest {
+public class Test_SendAMessageToSupportTeam extends BaseTest {
 
 	@Managed(uniqueSession = true)
 	public WebDriver webdriver;
@@ -34,7 +34,6 @@ public class Test_ContactSupportTeam extends BaseTest {
 	public void test_ContactSupportTeam(){
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
 		headerSteps.openContactForm();
-		//TODO create stepgroup "complete contact message" unde paelezi direct completarea de inpututi din page
 		contactSteps.selectMessageTarget();
 		contactSteps.enterEmailAdress();
 		contactSteps.enterOrderRefference();

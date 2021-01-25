@@ -13,11 +13,13 @@ public class ProductDetailPage extends GeneralPage {
 		waitUntilContentLoads();
 		getDriver().findElement(By.cssSelector(".button-plus")).click();
 	}
-
-	public void removeOneProduct() {
+	public void removeProductFromCart() {
 		waitUntilContentLoads();
-		getDriver().findElement(By.cssSelector(".button-minus")).click();
+		getDriver().findElement(By.cssSelector(".ajax_cart_block_remove_link")).click();
 	}
+
+	
+	
 
 	public void closeCartPreviewWindow() {
 		clickButtonByCssSelector(".cross");

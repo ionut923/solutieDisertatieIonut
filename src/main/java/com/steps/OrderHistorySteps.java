@@ -2,11 +2,12 @@ package com.steps;
 
 import static org.junit.Assert.assertEquals;
 
-import junit.framework.Assert;
+import org.junit.Assert;
+
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.annotations.findby.By;
 
-@SuppressWarnings("deprecation")
+
 public class OrderHistorySteps extends GeneralSteps {
 	private static final long serialVersionUID = 1L;
 

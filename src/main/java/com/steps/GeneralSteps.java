@@ -9,8 +9,6 @@ import com.pages.LoginPage;
 import com.pages.OrderHystoryPage;
 import com.pages.ProductDetailPage;
 
-import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.StepGroup;
 import net.thucydides.core.steps.ScenarioSteps;
 
 public class GeneralSteps extends ScenarioSteps {

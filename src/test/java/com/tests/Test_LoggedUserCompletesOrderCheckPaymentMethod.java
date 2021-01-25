@@ -17,7 +17,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 
 @RunWith(SerenityRunner.class)
-public class Test_SignedInUserCompletesPurchaseCheckPaymentMethod extends BaseTest {
+public class Test_LoggedUserCompletesOrderCheckPaymentMethod extends BaseTest {
 	@Managed(uniqueSession = true)
 	public WebDriver webdriver;
 

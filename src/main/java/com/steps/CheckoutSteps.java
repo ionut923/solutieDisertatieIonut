@@ -49,7 +49,7 @@ public class CheckoutSteps extends GeneralSteps{
 		String actualProductName = getDriver().findElement(By.cssSelector(".cart_ref")).getText();
 		String[] actualProductNameList = actualProductName.split(" ");
 		actualProductName = actualProductNameList[2];
-		String actualProductPrice = getDriver().findElement(By.cssSelector("#total_product_price_2_7_63712")).getText();
+		String actualProductPrice = getDriver().findElement(By.cssSelector("#total_product")).getText();
 		assertEquals("Wrong product added to cart", expectedProductName, actualProductName);
 		assertEquals("Wrong price is displayed in cart", expectedProductPrice, actualProductPrice);
 		

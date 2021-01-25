@@ -36,16 +36,12 @@ public class Test_UpdateCartAndVerifyBehavior extends BaseTest {
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
 		loginSteps.login(EnvironmentConstants.USER, EnvironmentConstants.PASS);
 		generalSteps.navigateTo(EnvironmentConstants.PRODUCT_DETAIL_PAGE_URL);
-		//TODO stepgroup cu dou parametri (produsul, cantitatea)
 		productDetailsSteps.addOneMoreProduct();
 		productDetailsSteps.addProductTocart();
-		//TODO verify product name  + cantitate
 		productDetailsSteps.verifyNumberOfProducts("2");
 		productDetailsSteps.closeCartPreviewWindow();
-		//TODO go to checkout and remove product cu doi parametrii(produs, cantitateToBeRemove)
 		productDetailsSteps.removeOneProduct();
-		productDetailsSteps.addProductTocart();
-		productDetailsSteps.verifyNumberOfProducts("1");
-		productDetailsSteps.closeCartPreviewWindow();
+		productDetailsSteps.verifyCartIsEmpty();
+		
 	}
 }
