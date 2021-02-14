@@ -35,9 +35,9 @@ public class Test_Login extends BaseTest {
 	
 	
 	@Test
-	public void loginTest() {
+	public void loginTest() throws InterruptedException{
 		   
-		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
+		generalSteps.navigateToURL(EnvironmentConstants.BASE_URL);
 		loginSteps.login(EnvironmentConstants.USER, EnvironmentConstants.PASS);
 		createAccountSteps.verifyUserOnAccountPage();
 	}
