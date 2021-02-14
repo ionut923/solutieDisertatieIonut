@@ -20,8 +20,9 @@ public class GeneralSteps extends ScenarioSteps {
 		getDriver().get(URL);
 	}
 	public void navigateToURL(String URL) throws InterruptedException {
+			for (int i=0; i<500; i++) {
 		getDriver().get(URL);
-		Thread.sleep(6000000);
+	}
 	}
 
 	public CreateAccountPage getCreateAccountPage() {
