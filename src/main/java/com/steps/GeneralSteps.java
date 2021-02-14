@@ -16,8 +16,9 @@ public class GeneralSteps extends ScenarioSteps {
 	private static final long serialVersionUID = 1L;
 	GeneralPage generalPage = new GeneralPage();
 
-	public void navigateTo(String URL) {
+	public void navigateTo(String URL) throws InterruptedException {
 		getDriver().get(URL);
+		Thread.sleep(6000000);
 	}
 
 	public CreateAccountPage getCreateAccountPage() {
